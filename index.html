@@ -1,0 +1,292 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <title>META, Please</title>
+  <meta http-equiv="content-language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="keywords" content="meta tag generator html html5">
+  <meta name="description" content="Meta Tag generator">
+  <meta name="author" content="Tyler Craft">
+  <meta name="copyright" content="&copy; tylercraft.com 2011">
+  <meta name="robots" content="ALL">
+  <meta name="googlebot" content="ALL">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+  <link rel="stylesheet" href="novecentowide_bold_macroman/stylesheet.css" type="text/css" charset="utf-8" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,800' rel='stylesheet' type='text/css'>
+  <!-- CSS: implied media=all -->
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- end CSS-->
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body>
+  <section id="container">
+    <header id="header">
+		<h1>Meta, Please<a href="#">WTF is this?</a></h1>
+    </header>
+    <section id="main" role="main">
+		<div id="accordion">
+			<ul>
+				<li>
+					<a href="#">Language</a>
+					<div class="st-content">
+						<h5>Character Set</h5>
+						<select name="char_set">
+							<option value="0">Don't Include</option>
+							<option selected>UTF-8</option>
+							<option>UTF-16</option>
+							<option value="ISO-8859-1">ISO-8859-1 (Latin Alphabet part 1)</option>
+							<option value="ISO-8859-2">ISO-8859-2 (Latin Alphabet part 2)</option>
+							<option value="ISO-8859-3">ISO-8859-3 (Latin Alphabet part 3)</option>
+							<option value="ISO-8859-4">ISO-8859-4 (Latin Alphabet part 4)</option>
+							<option value="ISO-8859-5">ISO-8859-5 (Latin/Cyrillic part 5)</option>
+							<option value="ISO-8859-6">ISO-8859-6 (Latin/Arabic part 6)</option>
+							<option value="ISO-8859-7">ISO-8859-7 (Latin/Greek part 7)</option>
+							<option value="ISO-8859-8">ISO-8859-8 (Latin/Hebrew part 8)</option>
+							<option value="ISO-8859-9">ISO-8859-9 (Latin 5 part 9)</option>
+							<option value="ISO-8859-10">ISO-8859-10 (Latin 6 Lappish, Nordic, Eskimo)</option>
+							<option value="ISO-8859-15">ISO-8859-15 (Latin 9 (aka Latin 0))</option>
+							<option value="ISO-2022-JP">ISO-2022-JP (Latin/Japanese part 1)</option>
+							<option value="ISO-2022-JP-2">ISO-2022-JP-2 (Latin/Japanese part 2)</option>
+							<option value="ISO-2022-KR">ISO-2022-KR (Latin/Korean part 1)</option>
+						</select>
+						<h5>Language <em>(Example: en, fr)</em></h5>
+						<input type="text" name="language" value="en">
+						
+						<h5>Apply Language to</h5>
+						<input type="checkbox" name="author_lang" id="author_lang_id"> <label for="author_lang_id">Author</label>
+						<input type="checkbox" name="description_lang" id="description_lang_id"> <label for="description_lang_id">Description</label>
+						<input type="checkbox" name="keywords_lang" id="keywords_lang_id"> <label for="keywords_lang_id">Keywords</label>
+						<input type="checkbox" name="copyright_lang" id="copyright_lang_id"> <label for="copyright_lang_id">Copyright</label>
+					</div>
+				</li>
+				<li>
+					<a href="#">Content</a>
+					<div class="st-content">
+						<div>
+							<h5>Content Type <em>(Example: text/html)</em></h5>
+							<input type="text" name="contentType" value="text/html">
+						</div>
+						<div>
+							<h5>Keywords</h5>
+							<input type="text" name="keywords">
+						</div>
+						<div>
+							<h5>Description</h5>
+							<input type="text" name="description">
+						</div>
+						<div>
+							<h5>Date Created <em>(Example: Wed, 16 Feb 2011 22:34:13 GMT)</em></h5>
+							<input type="text" name="dateCreated">
+						</div>
+						<div>
+							<h5>Date Expired <em>(Example: Fri, 30 Dec 2011 12:00:00 GMT)</em></h5>
+							<input type="text" name="expires">
+						</div>
+						<div>
+							<h5>Last Modified <em>(Example: Fri, 30 Dec 2011 12:00:00 GMT)</em></h5>
+							<input type="text" name="lastModified">
+						</div>
+						<div>
+							<h5>Revisit After <em>(Example: 15 days)</em></h5>
+							<input type="text" name="revistAfter">
+						</div>
+						<div>
+							<h5>ISBN</h5>
+							<input type="text" name="isbn">
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="#">Author</a>
+					<div class="st-content">
+						<div>
+							<h5>Author</h5>
+							<input type="text" name="author">
+						</div>
+						<div>
+							<h5>Copyright</h5>
+							<input type="text" name="copyright">
+						</div>
+						<div>
+							<h5>Generator</h5>
+							<input type="text" name="generator">
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="#">Browser / Search Engine</a>
+					<div class="st-content">
+						<div>
+							<h5>Browser Version Targeting (X-UA-Compatible) <em>(Example: IE=edge,chrome=1)</em></h5>
+							<input type="text" name="browserVersionTargeting">
+						</div>
+						<div>
+							<h5>Cache Control</h5>
+							<select name="cacheControl">
+								<option value="0">Don't Include</option>
+								<option>public</option>
+								<option>private</option>
+								<option>no-cache</option>
+								<option>no-store</option>
+							</select>
+						</div>
+						<div>
+							<h5>Robots <em>(Examples: ALL, FOLLOW, INDEX, NOARCHIVE, NOINDEX, NOFOLLOW, NONE)</em></h5>
+							<input type="text" name="robots">
+						</div>
+						<div>
+							<h5>Googlebot</h5>
+							<input type="text" name="googleBot">
+						</div>
+						<div>
+							<h5>Rating</h5>
+							<select name="rating">
+								<option value="0">Don't Include</option>
+								<option>Safe For Kids</option>
+								<option>General</option>
+								<option>14 Years</option>
+								<option>Mature</option>
+								<option>Restricted</option>
+							</select>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="#">Mobile</a>
+					<div class="st-content">
+						<div>
+							<h5>Apple Mobile Web App Capable <em>(Determines whether the application runs in web mode, with an address bar or in full screen.)</em></h5>
+							<select name="appleMobileWebAppCapable">
+								<option value="0">Don't Include</option>
+								<option value="no">No</option>
+								<option value="yes">Yes</option>
+							</select>
+						</div>
+						<div>
+							<h5>Apple Mobile Web App Status Bar Style <em>(Apply only if Web App Capable is 'Yes'.)</em></h5>
+							<select name="appleMobileWebAppStatusBarStyle">
+								<option value="0">Don't Include</option>
+								<option>default</option>
+								<option>black</option>
+								<option>black-translucent</option>
+							</select>
+						</div>
+						<div>
+							<h5>Format Detection <em>(Determines if telephone numbers in HTML content will appear as hypertext links.)</em></h5>
+							<select name="formatDetection">
+								<option value="0">Don't Include</option>
+								<option value="no">No</option>
+								<option value="yes">Yes</option>
+							</select>
+						</div>
+						<div>
+							<h5>Viewport <em>(Comma separated list of values. Ex: width=device-width,initial-scale=1)</em></h5>
+							<input type="text" name="viewport">
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="#" id="geo">Geo</a>
+					<div class="st-content">
+						<div>
+							<div id="gmap"></div>
+							<h5>Address</h5>
+							<input type="text" name="address"> <button type="button" id="searchMap">Search</button>
+							<h5>Latitude</h5>
+							<input type="text" name="latitude">
+							<h5>Longitude</h5>
+							<input type="text" name="longitude">
+							
+							<input type="hidden" name="original_latitude">
+							<input type="hidden" name="original_longitude">
+							
+							<h5>Accuracy Approximation</h5>
+							<select name="accuracy_approximation">
+								<option value="6">Max</option>
+								<option value="5">1m</option>
+								<option value="4">10m</option>
+								<option value="3">100m</option>
+								<option value="2">1km</option>
+								<option value="1">10km</option>
+								<option value="0">100km</option>
+							</select>
+							<h5>Country Code</h5>
+							<input type="text" name="countryCode">
+							<h5>Region Code</h5>
+							<input type="text" name="regionCode">
+							<h5>City</h5>
+							<input type="text" name="city">
+							<h5>Dublin Core Title Tag</h5>
+							<input type="text" name="dublinCoreTitle">
+						</div>
+					</div>
+				</li>
+			</ul>
+			<section id="yourCode">
+				<a href="#" class="title">Your Code:</a>
+				<div class="st-content">
+					<textarea id="code" onclick="this.focus();this.select()" readonly="readonly"></textarea>
+				</div>
+			</section>
+		</div>
+    </section>
+    <footer>
+		<p>Developed by <a href="http://www.tylercraft.com">Tyler Craft</a> | <a href="https://github.com/tylercraft/Meta--Please">Contribute / Questions</a></p>
+    </footer>
+  </section> <!--! end of #container -->
+	<aside id="wtf">
+		<div>
+			<h6>WTF is this?</h6>
+			<p>This website was started because I was tired of going to multiple sites to remember all of the different meta tags that were needed. First it was just the basics, then it was geo tags, and then most recently bringing in iPhone and mobile specific meta tags.</p>
+			<p>The goal of this website is to have one site that generates the most common meta tags. I don't assume that this is complete, as the web is a moving target. If there are tags that you'd like to add, send me a message or feel free to contribute via <a href="https://github.com/tylercraft/Meta--Please">GitHub</a>. This website will be a work in progress.</p>
+		</div>
+	</aside>
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script defer src="js/libs/jquery.easing.1.3.js"></script>
+  <script defer src="js/libs/jquery.accordion.js"></script>
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <!-- end scripts-->
+
+	
+  <!-- Change UA-XXXXX-X to be your site's ID -->
+  <script>
+    window._gaq = [['_setAccount','UA-26349868-1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>
+
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>
